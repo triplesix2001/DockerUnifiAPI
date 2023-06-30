@@ -1,0 +1,5 @@
+Package
+    docker build -t api-image .
+
+Start
+    docker run -p 5000:5000 -e UNIFI_USERNAME=test -e PASSWORD=123 -e IP_ADDRESS=192.168.0.1 -e PORT=8080 -e SITE=example -e MODEL=my_model -it api-image
